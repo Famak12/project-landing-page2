@@ -689,7 +689,7 @@ footer {
 
 }
 
-@media (max-width: 435px) {
+@media (max-width: 460px) {
     .head-row > h1 {
         font-size: 24px;
         padding: 0 0 0 0.5rem;
