@@ -1,0 +1,704 @@
+body{
+    margin: 0;
+}
+
+.nav-dropdown {
+    display: none;
+    color: white;
+    border: 1px solid white;
+   width: 35px;
+   height: 39px;
+    border-radius: 10px;
+} 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    opacity: 90%;
+    min-width: 140px;
+    border-radius: 10px;
+    /* padding: 12px 16px; */
+    z-index: 2;
+  }
+
+  .dropdown-content > ul {
+    list-style-type: none;
+    color: white;
+    font-size: 12px;
+  }
+
+  .dropdown-content > ul > li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .nav-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-dropdown > i {
+    padding: 0.5rem 0.5rem 0.5rem ;
+   }
+
+.nav-dropdown:hover {
+    box-shadow: 1px 1px 10px white;
+}
+
+.head-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Inria Sans", sans-serif;
+  font-style: normal;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+}
+
+.head-row > h1 {
+    /* display: inline-block; */
+    color: white;
+    font-size: 25px;
+    margin: 5px 0 0 0;
+    padding: 0.625rem 0.313rem 0 6.375rem;
+}
+
+ 
+
+.head-row > h1::after {
+        content: ".";
+        color: rgb(159, 15, 15);
+        margin: 0;
+      
+}
+
+
+.head-row > div > ul {
+    margin: 0;
+    list-style-type: none;
+    font-size: 12px;
+    padding: 10px 5px 0px 60px;
+}
+
+.head-row > div > ul > li {
+    text-shadow: 5px 4px 3px black;
+   float: left;
+   margin: 0 0 5px 30px;
+}
+
+.nav {
+    background: linear-gradient(300deg, rgb(179, 29, 29), #070b0c,#380303);
+    background-size: 180% 180%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: 2px 0 0 0; */
+    padding: 20px;
+    font-family: "Playwrite VN", cursive;
+    font-weight: bold;
+    font-size: 14px;
+    /* position: fixed; */
+    animation: example;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.nav > ul {
+    list-style-type: none;
+    margin: 0;
+    
+}
+
+.nav > ul > li > a {
+    text-decoration: none;
+    color: white; }
+    
+
+.nav > ul > li {
+    color: white;
+    display: inline;
+    padding: 0 0 0 3rem;
+}
+
+.input {
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid white;
+    height: 1.3rem;
+
+}
+
+.btn {
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #6a0606;
+    height: 1.5rem;
+    width: 6rem;
+    /* opacity: 70%; */
+}
+
+.btn:hover {
+    box-shadow: 3px 3px 5px black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: fit-content;
+    background-image: url("../images/—Pngtree—elegant\ golden\ marble\ liquid\ texture_13421035.jpg");
+    background-size: cover;
+}
+
+.head-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    z-index: 1;
+    height: 30rem;
+   
+}
+
+.head-container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1.87rem 0.93rem 0 0;
+    padding: 2.18rem;
+    border: 2px solid black;
+    height: 20.625rem;
+    width: 85%;
+    background-color: black;
+    opacity: 80%;
+    color: white;
+    font-family: "Playwrite VN", cursive;
+    font-size: 12px;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.para-div {
+    width: 45%;
+    /* margin: 2rem 0 0 3rem; */
+}
+
+.img-div {
+    
+    height: fit-content;
+    width: 50%;
+    text-align: center;
+}
+
+.mid-container {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+    height: 30.93rem ;
+    margin: 5rem 5rem;
+    gap: 20px;
+    font-family: "Playwrite VN", cursive;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.mid-container > div > h2 {
+    margin-top: 0;
+    padding-top: 0;
+
+}
+
+.mid-container-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2rem; */
+}
+
+.mid-container-div > div {
+    margin: 2rem;
+    flex: 1;
+    padding: 10px;
+    background: linear-gradient(300deg, rgb(179, 29, 29), #070b0c,#380303);
+    background-size: 180% 180%;
+    color: white;
+    animation: servicesanime;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes servicesanime {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.mid-container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+   padding: 40px;
+   background-color: #000000;
+   color: white;
+   opacity: 90%;
+
+}
+
+.mid-container3 > div {
+    margin: 2rem;
+    flex: 1;
+    padding: 10px;
+    font-family: "Playwrite VN", cursive;
+    font-size: 14px;
+    font-weight: 400;
+    /* background-color: #947039; */
+    /* color: white; */
+
+}
+
+.progress-div {
+    width: 100%;
+    height: 0.3rem;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.progress-div2 {
+    background-color: #380303;
+    height: 0.3rem;
+}
+
+.para-skills {
+    margin: 0;
+}
+
+.skills-div {
+    margin: 7px;
+}
+
+.mid-container4 {
+    padding: 5rem;
+    font-family: "Playwrite VN", cursive;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: fit-content;
+}
+
+.service-subdiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 2px solid black; */
+    height: 200px;
+    width: 80%;
+    flex: 1;
+}
+
+.service-subdiv > div {
+    flex: 1;
+    /* border: 1px solid blue; */
+    height: fit-content;
+    text-align: center;
+    width: 25%;
+    margin: 20px;
+
+}
+
+.ser-icon {
+    border: 3px solid red;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.mid-container5 {
+    font-family: "Playwrite VN", cursive;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: black;
+    opacity: 90%;
+    color: white;
+}
+
+.blog-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.blog-div > div {
+    /* border: 2px solid black; */
+    width: 25%;
+    height: fit-content;
+    padding: 3rem;
+}
+
+/* .blog-div > div:hover {
+    border: 2px solid white;
+    box-shadow: 2px 2px 4px white;
+    cursor: pointer;
+} */
+
+footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    padding: 4rem 0 4rem 4rem;
+    background-color: grey;
+    opacity: 70%;
+    color: white;
+
+}
+/* .footer-div1 {
+    flex: 2;
+} */
+.footer-div1 > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.footer-h4 {
+    font-size: 16px;
+}
+
+.footer-div1 > ul > li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.icons-div{ 
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footer-icons {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 3px;
+}
+
+.footer-subscribe {
+    margin: 2rem 2rem 0 0;
+    align-self: flex-start;
+}
+
+.footer-div0 {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    /* position: relative; */
+    /* animation: myfirst 5s linear 2s infinite alternate;  */
+}
+
+/* @keyframes myfirst {
+    0% {left: 0px; top: 0px}
+    50% {left: 70px; top: 0px;}
+    100% {left: 70px; top: 70px;}
+} */
+
+
+.footer-div0 > img {
+    margin: 0; 
+    text-align: center;
+}
+
+.footer-div0 > p {
+    text-align: center; 
+    opacity: 60%; 
+    font-size: 10px; 
+    padding: 0;
+    margin: 0;
+}
+
+.last-para {
+    text-align: center; 
+    background-color: grey; 
+    opacity: 70%; 
+    color: white; 
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 940px) {
+
+
+.head-row > h1 {
+    font-size: 24px;
+    padding: 0 0 0 0.5rem;
+    margin: 2px 0 0 0;
+}
+
+.head-row > div > ul {
+    font-size: 7px;
+    font-weight: 300;
+}
+
+.head-container {
+    flex-direction: column;
+    height: fit-content;
+}
+
+.head-container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    width: 90%;
+    font-size: 10px;
+    padding: 10px;
+    margin: 5px 5px 0 0;
+}
+
+.para-div {
+    width: 100%;
+}
+
+.img-div {
+    width: 100%;
+}
+
+.nav > ul{
+    display: none;
+}
+
+.mid-container3 {
+    flex-direction: column;
+    height: fit-content;
+}
+.mid-container3 > div {
+    margin: 3rem 0 0 0;
+} 
+
+.mid-container-div {
+    flex-direction: column;
+}
+
+.mid-container-div > div {
+    width: 90%;
+    
+}
+
+.mid-container{
+    height: fit-content;
+    margin: 2rem 2rem;
+   
+}
+.service-subdiv {
+    flex-direction: column;
+    height: fit-content;
+
+}
+
+.mid-container4 {
+    height: fit-content;
+    padding: 2rem;
+}
+
+.service-subdiv > div {
+    width: 100%;
+    /* margin: 40px; */
+
+}
+.skill-container {
+    width: 90%;
+}
+
+.blog-div {
+    flex-direction: column;
+    
+}
+.blog-div > div {
+    width: 90%;
+    padding: 0;
+}
+footer {
+    flex-direction: column;
+    margin-bottom: 0;
+    padding: 0 2rem 0 1.5rem;
+    padding-right: 0;
+    gap: 2rem;
+    align-content: center;
+    justify-content: center;
+}
+
+.last-para {
+    padding-top: 2rem; 
+}
+
+.nav-dropdown {
+        position: relative;
+        display: inline-block;
+
+}
+
+.sbtn {
+    display: none;
+}
+
+}
+
+@media (max-width: 1024px) {
+    
+    
+    .head-container {
+        flex-direction: column;
+        height: fit-content;
+    }
+    
+    .head-container > div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: fit-content;
+        width: 90%;
+        font-size: 10px;
+        padding: 10px;
+        margin: 5px 5px 0 0;
+    }
+    
+    .para-div {
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .img-div {
+        width: 100%;
+    }
+
+    .img-div > img {
+        width: 35%;
+    }
+    
+    .mid-container3 {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .mid-container3 > div {
+        margin: 3rem 0 0 0;
+    } 
+    
+    .mid-container-div {
+        flex-direction: column;
+    }
+    
+    .mid-container-div > div {
+        width: 90%;
+        
+    }
+    
+    .mid-container{
+        height: fit-content;
+        margin: 2rem 2rem;
+       
+    }
+    .service-subdiv {
+        flex-direction: column;
+        height: fit-content;
+    
+    }
+    
+    .mid-container4 {
+        height: fit-content;
+        padding: 2rem;
+    }
+    
+    .service-subdiv > div {
+        width: 100%;
+        /* margin: 40px; */
+    
+    }
+    .skill-container {
+        width: 90%;
+    }
+    
+    .blog-div {
+        flex-direction: column;
+        
+    }
+    .blog-div > div {
+        width: 90%;
+        padding: 0;
+    }
+    footer {
+        flex-direction: column;
+        margin-bottom: 0;
+        padding: 0 2rem 0 1.5rem;
+        padding-right: 0;
+        gap: 2rem;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .last-para {
+        padding-top: 2rem; 
+    }
+    
+    
+
+}
+
+@media (max-width: 360px) {
+    .head-row > h1 {
+        font-size: 24px;
+        padding: 0 0 0 0.5rem;
+    }
+    
+    .head-row > div > ul {
+        font-size: 5px;
+        font-weight: 300;
+    }
+
+
+}
